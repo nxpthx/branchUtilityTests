@@ -1,0 +1,35 @@
+{
+	"name": "aoe/multihotspot-application",
+	"description": "Telekom MultiHotspot: Application Layer",
+	"type": "metapackage",
+	"license": "LGPL-3.0+",
+	"config": {
+		"vendor-dir": "Packages/Libraries",
+		"bin-dir": "bin"
+	},
+	"version": "dev-master",
+	"authors": [
+		{
+			"name": "AOE GmbH",
+			"email": "team-concar-click@aoe.com",
+			"homepage": "http://www.aoe.com/"
+		}
+	],
+	"require": {
+		"typo3/flow": "2.2.*",
+		"aoe/multihotspot-logicshared": "dev-master",
+		"aoe/multihotspot-bssclient": "dev-master",
+		"aoe/multihotspot-ossclient": "dev-master"
+	},
+	"minimum-stability": "dev",
+	"repositories": [
+		{
+			"type": "artifact",
+			"url":  "/var/www/default/htdocs/artifacts/MultiHotspot"
+		},
+		{
+			"type": "composer",
+			"url": "http://composer.aoehost.de/"
+		}
+	]
+}
